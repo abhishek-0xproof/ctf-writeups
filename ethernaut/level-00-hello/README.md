@@ -3,22 +3,22 @@
 ## Challenge
 Introduction to interacting with smart contracts through the browser console. [Hello Ethernaut](https://ethernaut.openzeppelin.com/level/0x7E0f53981657345B31C59aC44e9c21631Ce710c7)
 ## Must Haves Before starting level
-- [ ] Sepolia ETH on MetaMusk Wallet to be used.
-- [ ] ETH > 0.25
-    - [ ] [Google Seplia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
-    - [ ] [PoW Based Sepolia](https://sepolia-faucet.pk910.de/)
-- [ ] Basic Smart Contract Knowledge and JS
+- [X] Sepolia ETH on MetaMask Wallet to be used.
+- [X] ETH > 0.25
+    - [X] [Google Seplia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+    - [X] [PoW Based Sepolia](https://sepolia-faucet.pk910.de/)
+- [X] Basic Smart Contract Knowledge and JS
 
 
 ## Solution
 
 ```js
-// start with player call variable
+// start with player call variable, you get your wallet address
 player
 // proceed with 
 getBalance(player)
 //check ethernaut contract abi and owner
-await ethernaut()
+await ethernaut
 //look for .owner()
 await ethernaut.owner()
 // Connect wallet and get instance , use the UI to interact
@@ -45,11 +45,11 @@ await contract.authenticate("ethernaut0")
 
 ### Personal Experience and tips
 
-##### proceed always with   Chrome Browser , as firefox will fail likely on instance and transaction await calls on submission and instance allocation due to incorrect configuration with metamusk sepolia network and rejects at usage.
+##### proceed always with   Chrome Browser , as firefox will fail likely on instance and transaction await calls on submission and instance allocation due to incorrect configuration with metamask sepolia network and rejects at usage.
 ##### Keep Plenty of Sepolia Eth, use second website shared for more tokens.
 
-<div align="left">
-  <img src="https://github.com/abhishek-0xproof.png" width="12" style="border-radius: 50%;"> ->
+<div align="left" style="display: flex; align-items: center; gap: 10px;">
+  <img src="https://github.com/abhishek-0xproof.png" width="12" style="border-radius: 50%;">
   <a href="https://github.com/abhishek-0xproof"><b>abhishek-0xproof</b></a>
 </div>
 
